@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 20,
+  "bottomRow": 81,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "{{FolderList.selectedItem.quiz_test || \"\"}}",
+  "defaultText": "{{FolderList.selectedItem.material || \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -27,19 +27,19 @@
   "key": "wqxo1zobie",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 20,
+  "mobileBottomRow": 21,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 12,
-  "mobileTopRow": 0,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
   "parentColumnSpace": 11.251220703125,
-  "parentId": "ywh2iozzta",
+  "parentId": "wnsjgj0hlm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -47,6 +47,6 @@
   "topRow": 0,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,
-  "widgetId": "oxsmueu340",
-  "widgetName": "RichTextEditor3"
+  "widgetId": "pen4xvvqtn",
+  "widgetName": "RichTextEditor2"
 }

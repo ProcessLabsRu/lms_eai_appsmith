@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 87,
+  "bottomRow": 81,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultText": "{{FolderList.selectedItem.learning_plan || \"\"}}",
   "dynamicBindingPathList": [
@@ -44,6 +44,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
+  "shouldScrollContents": true,
   "topRow": 4,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,

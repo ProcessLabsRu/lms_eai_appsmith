@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.\"files\" (\"folder_id\", \"file_name\", \"file_type\", \"path\")\n  VALUES ({{FolderList.selectedItem.id}}, {{SmallFilePicker.files[0].name}}, 'pdf', {{FolderList.selectedItem.name}}||'/'||{{SmallFilePicker.files[0].name}});",
+      "body": "-- Сначала добавляем файл\nINSERT INTO public.\"files\" (\"folder_id\", \"file_name\", \"file_type\", \"path\")\nVALUES ({{FolderList.selectedItem.id}}, {{SmallFilePicker.files[0].name}}, \n        'pdf', {{FolderList.selectedItem.name}}/{{SmallFilePicker.files[0].name}});\n\n-- Затем обновляем статус папки\nUPDATE public.\"folders\" \nSET status = 'ready' \nWHERE id = {{FolderList.selectedItem.id}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

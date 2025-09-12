@@ -1,0 +1,1 @@
+SELECT learning_plan FROM public."folders" where id={{FolderList.selectedItem.id}};

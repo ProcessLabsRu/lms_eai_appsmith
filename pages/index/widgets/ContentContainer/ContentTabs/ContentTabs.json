@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 93,
+  "bottomRow": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 890,
+      "bottomRow": 830,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -56,7 +56,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 890,
+      "bottomRow": 830,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -102,7 +102,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 890,
+      "bottomRow": 830,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -147,7 +147,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 890,
+      "bottomRow": 920,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -201,9 +201,29 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "tabsObj.tab1.isVisible"
+    },
+    {
+      "key": "tabsObj.tab2.isVisible"
+    },
+    {
+      "key": "tabsObj.tab3346ayobx6.isVisible"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "tabsObj.tab1.isVisible"
+    },
+    {
+      "key": "tabsObj.tab2.isVisible"
+    },
+    {
+      "key": "tabsObj.tab3346ayobx6.isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
@@ -219,8 +239,6 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 38,
-  "originalTopRow": 0,
   "parentColumnSpace": 7.03515625,
   "parentId": "4se9dapo31",
   "parentRowSpace": 10,
@@ -234,7 +252,7 @@
       "id": "tab1",
       "index": 1,
       "isDuplicateLabel": false,
-      "isVisible": true,
+      "isVisible": "{{GetFiles.data && GetFiles.data.length > 0}}",
       "label": "План обучения",
       "positioning": "vertical",
       "widgetId": "nhub00wqzw"
@@ -243,7 +261,7 @@
       "id": "tab2",
       "index": 2,
       "isDuplicateLabel": false,
-      "isVisible": true,
+      "isVisible": "{{WerifiPlan.data && WerifiPlan.data[0]?.learning_plan}}",
       "label": "Учебные материалы",
       "positioning": "vertical",
       "widgetId": "wnsjgj0hlm"
@@ -252,7 +270,7 @@
       "id": "tab3346ayobx6",
       "index": 3,
       "isDuplicateLabel": false,
-      "isVisible": true,
+      "isVisible": "{{WerifiPlan.data && WerifiPlan.data[0]?.learning_plan}}",
       "label": "Проверка знаний",
       "widgetId": "ywh2iozzta"
     },
@@ -269,5 +287,5 @@
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "d5zaq7bm2e",
-  "widgetName": "Tabs1"
+  "widgetName": "ContentTabs"
 }

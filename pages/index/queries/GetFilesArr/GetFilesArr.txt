@@ -1,0 +1,4 @@
+SELECT path, file_name 
+FROM public."files" 
+WHERE folder_id = {{FolderList.selectedItem.id}} 
+AND path IS NOT NULL;

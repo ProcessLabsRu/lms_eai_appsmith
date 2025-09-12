@@ -1,0 +1,125 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonm3yog5ohed.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2qxyobispa.buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2qxyobispa.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonm3yog5ohed.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2qxyobispa.menuItems.menuItemdh5d8upyil.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "add",
+      "id": "groupButton2",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Добавить курс",
+      "menuItems": {},
+      "onClick": "{{showModal(ModalCreateCourse.name);}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2qxyobispa": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "MENU",
+      "iconName": "bring-data",
+      "id": "groupButton2qxyobispa",
+      "index": 2,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "",
+      "menuItems": {
+        "menuItemdh5d8upyil": {
+          "backgroundColor": "#fce4da",
+          "iconAlign": "right",
+          "id": "menuItemdh5d8upyil",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Удалить курс",
+          "onClick": "{{DeleteCource.run();\nGetCourses.run()}}",
+          "widgetId": "q0rqw9y2n7"
+        }
+      },
+      "onClick": "{{DeleteCource.run();\nsetInterval(() => {}, 2000, '');\nGetCourses.run();}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "fjmlon6nfy"
+    },
+    "groupButtonm3yog5ohed": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonm3yog5ohed",
+      "index": 1,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Обновить",
+      "menuItems": {},
+      "onClick": "{{GetCourses.run()}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "5jl02bfj3a"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3iqb0vz7yp",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "parentColumnSpace": 4.994140625,
+  "parentId": "4u7js7joks",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "9sf8vk5lv2",
+  "widgetName": "ButtonGroup2"
+}

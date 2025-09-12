@@ -1,0 +1,2 @@
+INSERT INTO public."files" ("folder_id", "file_name", "file_type", "path")
+  VALUES ({{FolderList.selectedItem.id}}, {{SmallFilePicker.files[0].name}}, 'pdf', {{FolderList.selectedItem.name}}||'/'||{{SmallFilePicker.files[0].name}});

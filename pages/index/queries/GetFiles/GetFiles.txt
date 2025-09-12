@@ -1,0 +1,4 @@
+SELECT * FROM public."files"
+WHERE
+folder_id={{FolderList.selectedItem.id}};
+

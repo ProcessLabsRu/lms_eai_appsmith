@@ -204,13 +204,13 @@
       "key": "boxShadow"
     },
     {
+      "key": "tabsObj.tab3346ayobx6.isVisible"
+    },
+    {
       "key": "tabsObj.tab1.isVisible"
     },
     {
       "key": "tabsObj.tab2.isVisible"
-    },
-    {
-      "key": "tabsObj.tab3346ayobx6.isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -255,7 +255,7 @@
       "id": "tab1",
       "index": 1,
       "isDuplicateLabel": false,
-      "isVisible": "{{GetFiles.data && GetFiles.data.length > 0}}",
+      "isVisible": "{{FilesTable.tableData?.length > 0}}",
       "label": "План обучения",
       "positioning": "vertical",
       "widgetId": "nhub00wqzw"
@@ -264,7 +264,7 @@
       "id": "tab2",
       "index": 2,
       "isDuplicateLabel": false,
-      "isVisible": "{{WerifiPlan.data && WerifiPlan.data[0]?.learning_plan && WerifiPlan.data[0].learning_plan !== \"\"}}",
+      "isVisible": "{{PlanText.text.length>0}}",
       "label": "Учебные материалы",
       "positioning": "vertical",
       "widgetId": "wnsjgj0hlm"
@@ -273,7 +273,7 @@
       "id": "tab3346ayobx6",
       "index": 3,
       "isDuplicateLabel": false,
-      "isVisible": "{{WerifiPlan.data && WerifiPlan.data[0]?.learning_plan}}",
+      "isVisible": "{{MaterialText.text.length>0}}",
       "label": "Проверка знаний",
       "widgetId": "ywh2iozzta"
     },

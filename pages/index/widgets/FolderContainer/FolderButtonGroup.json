@@ -81,7 +81,7 @@
           "isDisabled": "{{!(FolderList.selectedItem !== null && FolderList.selectedItem !== undefined && FolderList.selectedItem.id)}}",
           "isVisible": true,
           "label": "Удалить курс",
-          "onClick": "{{DeleteCource.run();\nGetCourses.run()}}",
+          "onClick": "{{showModal(ModalConfirmDelCurse.name);}}",
           "widgetId": "q0rqw9y2n7"
         }
       },

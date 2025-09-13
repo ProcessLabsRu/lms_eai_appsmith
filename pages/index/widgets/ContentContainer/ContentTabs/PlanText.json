@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 81,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "{{FolderList.selectedItem.material || \"\"}}",
+  "defaultText": "{{FolderList.selectedItem.learning_plan || \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -24,7 +24,7 @@
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "wqxo1zobie",
+  "key": "452edhb6wl",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "",
@@ -33,20 +33,21 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 21,
+  "mobileBottomRow": 20,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 12,
-  "mobileTopRow": 1,
+  "mobileRightColumn": 19,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "parentColumnSpace": 11.251220703125,
-  "parentId": "wnsjgj0hlm",
+  "parentColumnSpace": 6.72265625,
+  "parentId": "nhub00wqzw",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 0,
+  "shouldScrollContents": true,
+  "topRow": 4,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,
-  "widgetId": "pen4xvvqtn",
-  "widgetName": "RichTextEditor2"
+  "widgetId": "11sl5r4bu1",
+  "widgetName": "PlanText"
 }

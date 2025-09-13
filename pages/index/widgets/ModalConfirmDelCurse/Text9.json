@@ -1,9 +1,7 @@
 {
   "animateLoading": true,
-  "borderColor": "#f1f5f9",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "",
-  "bottomRow": 10,
+  "bottomRow": 7,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -13,45 +11,40 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "7ktxn7q3kg",
-  "leftColumn": 0,
+  "key": "da1xajgt83",
+  "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 9,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 16,
-  "mobileTopRow": 5,
+  "mobileBottomRow": 5,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 10,
-  "originalTopRow": 5,
+  "originalBottomRow": 7,
+  "originalTopRow": 1,
   "overflow": "NONE",
-  "parentColumnSpace": 6.9375,
-  "parentId": "v19lir0vvp",
-  "parentRowSpace": 10,
+  "parentId": "jutnouubhg",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 58,
   "shouldTruncate": false,
-  "text": "Курс:\n{{FolderList.selectedItem.name}}",
+  "text": "Вы действительно хотите удалить курс?",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 5,
+  "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "qjblxcrmjv",
-  "widgetName": "Text8"
+  "widgetId": "p7aem9lenu",
+  "widgetName": "Text9"
 }

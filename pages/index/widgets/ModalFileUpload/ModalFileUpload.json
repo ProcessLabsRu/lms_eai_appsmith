@@ -75,7 +75,7 @@
   "mobileRightColumn": 0,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClose": "{{GetFiles.run()}}",
+  "onClose": "{{GetCourses.run().then(() => {\n  GetFiles.run();\n});}}",
   "parentColumnSpace": 1,
   "parentId": "0",
   "parentRowSpace": 1,

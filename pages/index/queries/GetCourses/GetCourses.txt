@@ -1,1 +1,2 @@
-SELECT * FROM public."folders";
+SELECT * FROM public."folders" 
+ORDER BY created_at DESC;  -- по дате создания (новые сначала)

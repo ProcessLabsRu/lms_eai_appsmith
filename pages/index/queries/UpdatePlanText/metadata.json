@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68b42a155ae85937a2d53732_14eed801-0227-4a5d-8e45-27f2f6ce4471",
-  "id": "index_GetCourses",
+  "gitSyncId": "68b42a155ae85937a2d53732_7477a0a5-30ba-4656-8d1d-ff8b7e46ffeb",
+  "id": "index_UpdatePlanText",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"folders\" \nORDER BY created_at DESC;  -- по дате создания (новые сначала)",
+      "body": "UPDATE public.\"folders\" SET\n    \"updated_at\" = NOW(),\n    \"learning_plan\" = {{PlanText.text}}\nWHERE id = {{FolderList.selectedItem.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "LMS_Postgres",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "GetCourses",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "UpdatePlanText",
     "pageId": "index",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

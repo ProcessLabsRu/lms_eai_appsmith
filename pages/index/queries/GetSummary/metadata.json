@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68b42a155ae85937a2d53732_14eed801-0227-4a5d-8e45-27f2f6ce4471",
-  "id": "index_GetCourses",
+  "gitSyncId": "68b42a155ae85937a2d53732_6b970002-71cf-4b72-a064-90982fcc56e9",
+  "id": "index_GetSummary",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"folders\" \nORDER BY created_at DESC;  -- по дате создания (новые сначала)",
+      "body": "SELECT STRING_AGG(file_summary, E'\\n\\n') AS combined_summary\nFROM public.\"files\"\nWHERE folder_id = {{FolderList.selectedItem.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "LMS_Postgres",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "GetCourses",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "GetSummary",
     "pageId": "index",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

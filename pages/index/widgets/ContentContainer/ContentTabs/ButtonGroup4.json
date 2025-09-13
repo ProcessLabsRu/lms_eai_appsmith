@@ -20,19 +20,12 @@
       "key": "groupButtons.groupButton2.buttonColor"
     },
     {
-      "key": "groupButtons.groupButtonoifmog3f73.buttonColor"
+      "key": "groupButtons.groupButton3.buttonColor"
     }
   ],
-  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton1.onClick"
-    },
-    {
-      "key": "groupButtons.groupButton2.onClick"
-    },
-    {
-      "key": "groupButtons.groupButtonoifmog3f73.onClick"
     }
   ],
   "groupButtons": {
@@ -45,9 +38,9 @@
       "index": 0,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Генерировать план",
+      "label": "Генерировать материал",
       "menuItems": {},
-      "onClick": "{{CreatePlan.run().then(() => {\n  GetCourses.run();\n  showAlert('Генерация плана завершена', 'success');\n  WerifiPlan.run();\n});}}",
+      "onClick": "{{CreateMaterial.run().then(() => {\n  GetCourses.run();\n  WerifiPlan.run();\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -62,41 +55,76 @@
       "isVisible": true,
       "label": "Сохранить изменения",
       "menuItems": {},
-      "onClick": "{{UpdatePlanText.run().then(() => {\n  showAlert('План обновлен', 'success');\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     },
-    "groupButtonoifmog3f73": {
+    "groupButton3": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "id": "groupButtonoifmog3f73",
+      "disabledWhenInvalid": false,
+      "iconName": "more",
+      "id": "groupButton3",
       "index": 2,
       "isDisabled": false,
-      "isSeparator": false,
       "isVisible": true,
-      "itemType": "BUTTON",
       "label": "Сохранить в файл",
-      "menuItems": {},
-      "onClick": "{{download(PlanText.text, 'План обучения ' + FolderList.selectedItem.name + '.rtf', 'text/plain');}}",
+      "menuItems": {
+        "menuItem1": {
+          "backgroundColor": "#FFFFFF",
+          "disabledWhenInvalid": false,
+          "id": "menuItem1",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "First Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem2": {
+          "backgroundColor": "#FFFFFF",
+          "disabledWhenInvalid": false,
+          "id": "menuItem2",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Second Option",
+          "onClick": "",
+          "widgetId": ""
+        },
+        "menuItem3": {
+          "backgroundColor": "#DD4B34",
+          "disabledWhenInvalid": false,
+          "iconAlign": "right",
+          "iconColor": "#FFFFFF",
+          "iconName": "trash",
+          "id": "menuItem3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Delete",
+          "onClick": "",
+          "textColor": "#FFFFFF",
+          "widgetId": ""
+        }
+      },
       "placement": "CENTER",
-      "variant": "filled",
-      "widgetId": "wmpzh5dhj1"
+      "widgetId": ""
     }
   },
   "isCanvas": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "0cvgzszhfr",
+  "key": "nzgbimjs06",
   "leftColumn": 0,
   "minWidth": 450,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 8,
+  "mobileRightColumn": 11,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "orientation": "horizontal",
-  "parentColumnSpace": 11.251220703125,
-  "parentId": "nhub00wqzw",
+  "parentColumnSpace": 8.5595703125,
+  "parentId": "wnsjgj0hlm",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -104,6 +132,6 @@
   "topRow": 0,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "kjuznqsurx",
-  "widgetName": "ButtonGroup3"
+  "widgetId": "dnf789qj3k",
+  "widgetName": "ButtonGroup4"
 }

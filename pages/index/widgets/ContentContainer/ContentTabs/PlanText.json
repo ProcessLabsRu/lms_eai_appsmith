@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 81,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "{{FolderList.selectedItem.learning_plan}}",
+  "defaultText": "{{WerifiPlan.data?.[0]?.learning_plan || \"План еще не создан\"}}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"

@@ -57,7 +57,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 830,
+      "bottomRow": 850,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -202,29 +202,10 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "tabsObj.tab3346ayobx6.isVisible"
-    },
-    {
-      "key": "tabsObj.tab1.isVisible"
-    },
-    {
-      "key": "tabsObj.tab2.isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "tabsObj.tab1.isVisible"
-    },
-    {
-      "key": "tabsObj.tab2.isVisible"
-    },
-    {
-      "key": "tabsObj.tab3346ayobx6.isVisible"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
@@ -255,7 +236,7 @@
       "id": "tab1",
       "index": 1,
       "isDuplicateLabel": false,
-      "isVisible": "{{FilesTable.tableData?.length > 0}}",
+      "isVisible": true,
       "label": "План обучения",
       "positioning": "vertical",
       "widgetId": "nhub00wqzw"
@@ -264,7 +245,7 @@
       "id": "tab2",
       "index": 2,
       "isDuplicateLabel": false,
-      "isVisible": "{{PlanText.text.length>0}}",
+      "isVisible": true,
       "label": "Учебные материалы",
       "positioning": "vertical",
       "widgetId": "wnsjgj0hlm"
@@ -273,7 +254,7 @@
       "id": "tab3346ayobx6",
       "index": 3,
       "isDuplicateLabel": false,
-      "isVisible": "{{MaterialText.text.length>0}}",
+      "isVisible": true,
       "label": "Проверка знаний",
       "widgetId": "ywh2iozzta"
     },

@@ -1,0 +1,3 @@
+SELECT STRING_AGG(file_summary, E'\n\n') AS combined_summary
+FROM public."files"
+WHERE folder_id = {{FolderList.selectedItem.id}};

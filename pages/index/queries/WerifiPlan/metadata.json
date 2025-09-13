@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT status FROM public.\"folders\" where id={{FolderList.selectedItem.id}};",
+      "body": "SELECT id, name, status, learning_plan, created_at, updated_at, material\nFROM public.\"folders\" \nWHERE id = {{FolderList.selectedItem.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -29,7 +29,7 @@
     ],
     "name": "WerifiPlan",
     "pageId": "index",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

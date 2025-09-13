@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{DeleteCource.run().then(() => {\n  GetCourses.run();\n  closeModal(ModalConfirmDelCurse.name);\n});}}",
+  "onClick": "{{DeleteCource.run().then(() => {\n  GetCourses.run();\n  closeModal(ModalConfirmDelCurse.name);\n  showAlert('Курс успешно удалён', 'success');\n});}}",
   "originalBottomRow": 19,
   "originalTopRow": 15,
   "parentId": "jutnouubhg",

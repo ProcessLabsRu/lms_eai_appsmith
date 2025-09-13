@@ -40,7 +40,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{CreateCource.run().then(() => {\n  setInterval(() => {}, 1000, '');\n  showAlert('Курс добавлен', 'success');\n  GetCourses.run();\n  closeModal(ModalCreateCourse.name);\n});}}",
+  "onClick": "{{CreateCource.run().then(() => {\n  showAlert('Курс добавлен', 'success');\n  GetCourses.run();\n  closeModal(ModalCreateCourse.name);\n});}}",
   "parentId": "j9zd0oludg",
   "placement": "CENTER",
   "recaptchaType": "V3",

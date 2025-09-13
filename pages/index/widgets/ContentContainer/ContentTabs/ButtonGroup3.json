@@ -78,7 +78,7 @@
       "index": 2,
       "isDisabled": false,
       "isSeparator": false,
-      "isVisible": true,
+      "isVisible": false,
       "itemType": "BUTTON",
       "label": "Сохранить в файл",
       "menuItems": {},

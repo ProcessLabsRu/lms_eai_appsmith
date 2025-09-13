@@ -78,7 +78,7 @@
       "id": "groupButton3",
       "index": 2,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Скачать файл",
       "menuItems": {
         "menuItem1": {

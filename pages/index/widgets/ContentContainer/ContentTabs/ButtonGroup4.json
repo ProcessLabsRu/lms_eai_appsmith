@@ -34,6 +34,9 @@
     },
     {
       "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
     }
   ],
   "groupButtons": {
@@ -75,7 +78,7 @@
       "id": "groupButton3",
       "index": 2,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Сохранить в файл",
       "menuItems": {
         "menuItem1": {
@@ -116,6 +119,7 @@
           "widgetId": ""
         }
       },
+      "onClick": "{{download(MaterialText.text, 'Материалы_' + FolderList.selectedItem + '.html', 'text/html');}}",
       "placement": "CENTER",
       "widgetId": ""
     }

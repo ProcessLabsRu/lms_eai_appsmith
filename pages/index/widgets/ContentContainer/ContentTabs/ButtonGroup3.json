@@ -82,7 +82,7 @@
       "itemType": "BUTTON",
       "label": "Сохранить в файл",
       "menuItems": {},
-      "onClick": "{{download(PlanText.text, 'План обучения ' + FolderList.selectedItem.name + '.rtf', 'text/plain');}}",
+      "onClick": "{{download('# ПЛАН КУРСА: ${FolderList.selectedItem?.name || \\'Курс\\'}\\n\\n**Дата создания:** ${new Date().toLocaleDateString(\\'ru-RU\\')}\\n\\n---\\n\\n## СОДЕРЖАНИЕ КУРСА:\\n\\n' + PlanText.text + '\\n\\n---\\n\\n*Файл создан системой автоматического создания курсов*}}', FolderList.selectedItem.name + '_план.md', '');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "wmpzh5dhj1"

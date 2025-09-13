@@ -1,10 +1,8 @@
 {
-  "allowedFileTypes": [
-    "*"
-  ],
+  "allowedFileTypes": "[\n  \".pdf\"\n]",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 15,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "dynamicBindingPathList": [
@@ -15,7 +13,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "allowedFileTypes"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onFilesSelected"

@@ -1,0 +1,2 @@
+DELETE FROM public."files" 
+WHERE id = {{FilesTable.selectedRow.id}};

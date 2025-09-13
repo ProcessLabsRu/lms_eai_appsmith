@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "68b42a155ae85937a2d53732_d9f593e8-24bb-4b39-bb7f-5dabd0ad5942",
-  "id": "index_UploadFiles",
+  "gitSyncId": "68b42a155ae85937a2d53732_644bbe80-9962-4329-a250-f6b3596852a0",
+  "id": "index_DeleteFile",
   "pluginId": "amazons3-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -8,20 +8,20 @@
       "encodeParamsToggle": true,
       "formData": {
         "body": {
-          "data": "{{SmallFilePicker.files[0]}}"
+          "data": ""
         },
         "bucket": {
           "data": "1bf1b61c108f-lmsbucket"
         },
         "command": {
-          "data": "UPLOAD_FILE_FROM_BODY"
+          "data": "DELETE_FILE"
         },
         "create": {
           "dataType": {
             "data": "YES"
           },
           "expiry": {
-            "data": "50"
+            "data": "5"
           }
         },
         "list": {
@@ -57,7 +57,7 @@
           }
         },
         "path": {
-          "data": "{{FolderList.selectedItem.id}}_{{SmallFilePicker.files[0].name}}"
+          "data": "{{FilesTable.selectedRow.path}}"
         },
         "read": {
           "dataType": {
@@ -81,12 +81,9 @@
     "dynamicBindingPathList": [
       {
         "key": "formData.path.data"
-      },
-      {
-        "key": "formData.body.data"
       }
     ],
-    "name": "UploadFiles",
+    "name": "DeleteFile",
     "pageId": "index",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

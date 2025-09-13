@@ -6,6 +6,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
   "bottomRow": 87,
+  "bottomRowBeforeCollapse": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -239,6 +240,8 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "originalBottomRow": 87,
+  "originalTopRow": 0,
   "parentColumnSpace": 7.03515625,
   "parentId": "4se9dapo31",
   "parentRowSpace": 10,
@@ -261,7 +264,7 @@
       "id": "tab2",
       "index": 2,
       "isDuplicateLabel": false,
-      "isVisible": "{{WerifiPlan.data && WerifiPlan.data[0]?.learning_plan}}",
+      "isVisible": "{{WerifiPlan.data && WerifiPlan.data[0]?.learning_plan && WerifiPlan.data[0].learning_plan !== \"\"}}",
       "label": "Учебные материалы",
       "positioning": "vertical",
       "widgetId": "wnsjgj0hlm"
@@ -284,6 +287,7 @@
     }
   },
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "d5zaq7bm2e",

@@ -21,6 +21,14 @@
     },
     {
       "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton3.isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -29,6 +37,9 @@
     },
     {
       "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.onClick"
     }
   ],
   "groupButtons": {
@@ -69,7 +80,7 @@
       "iconName": "more",
       "id": "groupButton3",
       "index": 2,
-      "isDisabled": false,
+      "isDisabled": "{{!FilesTable.selectedRow}}",
       "isVisible": true,
       "label": "Удалить файл",
       "menuItems": {
@@ -111,6 +122,7 @@
           "widgetId": ""
         }
       },
+      "onClick": "{{DeleteFile.run().then(() => {\n  DeleteFilesFromTable.run();\n  GetFiles.run();\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     }

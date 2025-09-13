@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68b42a155ae85937a2d53732_d5197818-5f2f-46ea-90e6-f52e35b35464",
-  "id": "index_CreateFileRecord",
+  "gitSyncId": "68b42a155ae85937a2d53732_166d5538-57df-46ab-8db0-245357e44681",
+  "id": "index_DeleteFilesFromTable",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "-- Сначала добавляем файл\nINSERT INTO public.\"files\" (\"folder_id\", \"file_name\", \"file_type\", \"path\")\nVALUES ({{FolderList.selectedItem.id}}, {{SmallFilePicker.files[0].name}}, \n        'pdf', {{FolderList.selectedItem.id}}|| '_' || {{SmallFilePicker.files[0].name}});\n\n-- Затем обновляем статус папки\nUPDATE public.\"folders\" \nSET status = 'ready' \nWHERE id = {{FolderList.selectedItem.id}};\n",
+      "body": "DELETE FROM public.\"files\" \nWHERE id = {{FilesTable.selectedRow.id}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "name": "CreateFileRecord",
+    "name": "DeleteFilesFromTable",
     "pageId": "index",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

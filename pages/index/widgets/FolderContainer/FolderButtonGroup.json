@@ -21,6 +21,14 @@
     },
     {
       "key": "groupButtons.groupButton2qxyobispa.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2qxyobispa.menuItems.menuItemdh5d8upyil.isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton2qxyobispa.menuItems.menuItemdh5d8upyil.isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -70,7 +78,7 @@
           "iconAlign": "right",
           "id": "menuItemdh5d8upyil",
           "index": 0,
-          "isDisabled": false,
+          "isDisabled": "{{!(FolderList.selectedItem !== null && FolderList.selectedItem !== undefined && FolderList.selectedItem.id)}}",
           "isVisible": true,
           "label": "Удалить курс",
           "onClick": "{{DeleteCource.run();\nGetCourses.run()}}",

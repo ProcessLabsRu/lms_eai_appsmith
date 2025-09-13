@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -38,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "shouldTruncate": false,
-  "text": "stat",
+  "text": "{{currentItem.status === \"new\" ? \"🔵\" : \n  currentItem.status === \"ready\" ? \"🟡\" : \n  currentItem.status === \"planned\" ? \"🟠\" : \n  currentItem.status === \"completed\" ? \"🟢\" : \n  \"⚪\"}}",
   "textAlign": "CENTER",
   "textColor": "#231F20",
   "topRow": 4,

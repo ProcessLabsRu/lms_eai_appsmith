@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68b42a155ae85937a2d53732_14eed801-0227-4a5d-8e45-27f2f6ce4471",
-  "id": "index_GetCourses",
+  "gitSyncId": "68b42a155ae85937a2d53732_1d6e6965-ca80-4925-99ee-c19733713dfd",
+  "id": "index_UpdateMaterialText",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM public.\"folders\" \nORDER BY created_at DESC;  -- по дате создания (новые сначала)",
+      "body": "UPDATE public.\"folders\" SET\n    \"updated_at\" = NOW(),\n    \"material\" = {{MaterialText.text}}\nWHERE id = {{FolderList.selectedItem.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "LMS_Postgres",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
-    "name": "GetCourses",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "name": "UpdateMaterialText",
     "pageId": "index",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": true
+    "runBehaviour": "MANUAL",
+    "userSetOnLoad": false
   }
 }

@@ -1,0 +1,4 @@
+UPDATE public."folders" SET
+    "updated_at" = NOW(),
+    "quiz_test" = {{QuizText.text}}
+WHERE id = {{FolderList.selectedItem.id}};

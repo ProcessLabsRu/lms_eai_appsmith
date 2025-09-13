@@ -1,8 +1,8 @@
 {
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0.375rem",
   "bottomRow": 4,
-  "boxShadow": "none",
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
     "button": {
@@ -11,9 +11,6 @@
   },
   "dynamicBindingPathList": [
     {
-      "key": "borderRadius"
-    },
-    {
       "key": "groupButtons.groupButton1.buttonColor"
     },
     {
@@ -21,11 +18,22 @@
     },
     {
       "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
     }
   ],
   "groupButtons": {
@@ -33,7 +41,7 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
-      "iconName": "heart",
+      "iconName": "add",
       "id": "groupButton1",
       "index": 0,
       "isDisabled": false,
@@ -48,13 +56,14 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
-      "iconName": "add",
+      "iconName": "saved",
       "id": "groupButton2",
       "index": 1,
       "isDisabled": false,
       "isVisible": true,
       "label": "Сохранить изменения",
       "menuItems": {},
+      "onClick": "{{UpdateMaterialText.run().then(() => {\n  showAlert('Материалы сохранены', 'info');\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -62,7 +71,7 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
-      "iconName": "more",
+      "iconName": "cloud-download",
       "id": "groupButton3",
       "index": 2,
       "isDisabled": false,
@@ -112,6 +121,7 @@
     }
   },
   "isCanvas": false,
+  "isDisabled": "{{PlanText.text.length<100}}",
   "isLoading": false,
   "isVisible": true,
   "key": "nzgbimjs06",

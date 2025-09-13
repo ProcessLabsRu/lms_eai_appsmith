@@ -21,11 +21,22 @@
     },
     {
       "key": "groupButtons.groupButton3.buttonColor"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
     }
   ],
   "groupButtons": {
@@ -33,7 +44,7 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
-      "iconName": "heart",
+      "iconName": "add",
       "id": "groupButton1",
       "index": 0,
       "isDisabled": false,
@@ -48,13 +59,14 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
-      "iconName": "add",
+      "iconName": "saved",
       "id": "groupButton2",
       "index": 1,
       "isDisabled": false,
       "isVisible": true,
       "label": "Сохранить изменения",
       "menuItems": {},
+      "onClick": "{{UpdateQuiz.run().then(() => {\n  GetCourses.run();\n  WerifiPlan.run();\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     },
@@ -62,7 +74,7 @@
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "disabledWhenInvalid": false,
-      "iconName": "more",
+      "iconName": "cloud-download",
       "id": "groupButton3",
       "index": 2,
       "isDisabled": false,
@@ -112,6 +124,7 @@
     }
   },
   "isCanvas": false,
+  "isDisabled": "{{MaterialText.text.length<100}}",
   "isLoading": false,
   "isVisible": true,
   "key": "nzgbimjs06",

@@ -1,8 +1,8 @@
 {
   "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0.375rem",
   "bottomRow": 4,
-  "boxShadow": "none",
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
     "button": {
@@ -11,19 +11,16 @@
   },
   "dynamicBindingPathList": [
     {
-      "key": "borderRadius"
-    },
-    {
       "key": "groupButtons.groupButton2.buttonColor"
-    },
-    {
-      "key": "groupButtons.groupButtonm3yog5ohed.buttonColor"
     },
     {
       "key": "groupButtons.groupButton2qxyobispa.buttonColor"
     },
     {
       "key": "groupButtons.groupButton2qxyobispa.menuItems.menuItemdh5d8upyil.isDisabled"
+    },
+    {
+      "key": "groupButtons.groupButton2qxyobispa.onClick"
     }
   ],
   "dynamicPropertyPathList": [
@@ -37,9 +34,6 @@
     },
     {
       "key": "groupButtons.groupButton2qxyobispa.onClick"
-    },
-    {
-      "key": "groupButtons.groupButtonm3yog5ohed.onClick"
     },
     {
       "key": "groupButtons.groupButton2qxyobispa.menuItems.menuItemdh5d8upyil.onClick"
@@ -64,9 +58,9 @@
     "groupButton2qxyobispa": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "MENU",
-      "iconName": "bring-data",
+      "iconName": "more",
       "id": "groupButton2qxyobispa",
-      "index": 2,
+      "index": 1,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
@@ -75,7 +69,8 @@
       "menuItems": {
         "menuItemdh5d8upyil": {
           "backgroundColor": "#fce4da",
-          "iconAlign": "right",
+          "iconAlign": "left",
+          "iconName": "trash",
           "id": "menuItemdh5d8upyil",
           "index": 0,
           "isDisabled": "{{!(FolderList.selectedItem !== null && FolderList.selectedItem !== undefined && FolderList.selectedItem.id)}}",
@@ -89,22 +84,6 @@
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "fjmlon6nfy"
-    },
-    "groupButtonm3yog5ohed": {
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "buttonType": "SIMPLE",
-      "id": "groupButtonm3yog5ohed",
-      "index": 1,
-      "isDisabled": false,
-      "isSeparator": false,
-      "isVisible": true,
-      "itemType": "BUTTON",
-      "label": "Обновить",
-      "menuItems": {},
-      "onClick": "{{GetCourses.run()}}",
-      "placement": "CENTER",
-      "variant": "filled",
-      "widgetId": "5jl02bfj3a"
     }
   },
   "isCanvas": false,

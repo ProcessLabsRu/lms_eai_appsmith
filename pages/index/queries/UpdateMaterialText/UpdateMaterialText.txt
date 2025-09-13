@@ -1,0 +1,4 @@
+UPDATE public."folders" SET
+    "updated_at" = NOW(),
+    "material" = {{MaterialText.text}}
+WHERE id = {{FolderList.selectedItem.id}};

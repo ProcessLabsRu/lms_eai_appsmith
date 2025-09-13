@@ -23,6 +23,7 @@
       "key": "groupButtons.groupButtonoifmog3f73.buttonColor"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton1.onClick"
@@ -40,7 +41,7 @@
       "isVisible": true,
       "label": "Генерировать план",
       "menuItems": {},
-      "onClick": "{{GetFilesArr.run().then(() => {\n  setInterval(() => {}, 1000, '');\n  CreatePlan.run();\n});}}",
+      "onClick": "{{CreatePlan.run().then(() => {\n  postWindowMessage('Генерация плана завершена', \"window\", \"*\");\n  GetCourses.run();\n  showAlert('Генерация плана завершена', 'success');\n});}}",
       "placement": "CENTER",
       "widgetId": ""
     },

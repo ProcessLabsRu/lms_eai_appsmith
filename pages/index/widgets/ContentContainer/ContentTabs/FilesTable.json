@@ -42,10 +42,9 @@
     "file_summary",
     "path",
     "upload_status",
-    "analize_status",
-    "file_fullname"
+    "analize_status"
   ],
-  "columnUpdatedAt": 1757749951894,
+  "columnUpdatedAt": 1757755513100,
   "columnWidthMap": {
     "file_name": 333,
     "file_summary": 474
@@ -101,9 +100,6 @@
     },
     {
       "key": "primaryColumns.analize_status.computedValue"
-    },
-    {
-      "key": "primaryColumns.file_fullname.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -207,40 +203,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "file_fullname": {
-      "alias": "file_fullname",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{(() => { const tableData = FilesTable.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"file_fullname\"])) : file_fullname })()}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "file_fullname",
-      "index": 10,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "file_fullname",
-      "notation": "standard",
-      "originalId": "file_fullname",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "file_name": {
       "alias": "file_name",
       "allowCellWrapping": false,
@@ -297,7 +259,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Саммари",
       "notation": "standard",
       "originalId": "file_summary",

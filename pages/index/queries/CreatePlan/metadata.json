@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{GetFilesArr.data}}",
+      "body": "",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -27,8 +27,13 @@
           "value": true
         }
       ],
-      "queryParameters": [],
-      "timeoutInMillisecond": 10000
+      "queryParameters": [
+        {
+          "key": "folder_id",
+          "value": "{{FolderList.selectedItem.id}} "
+        }
+      ],
+      "timeoutInMillisecond": 600000
     },
     "confirmBeforeExecute": false,
     "datasource": {
@@ -42,7 +47,7 @@
         "key": "headers[1].value"
       },
       {
-        "key": "body"
+        "key": "queryParameters[0].value"
       }
     ],
     "name": "CreatePlan",

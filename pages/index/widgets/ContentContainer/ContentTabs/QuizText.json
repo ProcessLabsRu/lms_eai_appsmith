@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 81,
+  "bottomRow": 85,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "{{FolderList.selectedItem.quiz_test || \"\"}}",
+  "defaultText": "{{WerifiPlan.data?.[0]?.quiz_test || \"Материал еще не создан\"}}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -44,9 +44,9 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 0,
+  "topRow": 4,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,
   "widgetId": "oxsmueu340",
-  "widgetName": "RichTextEditor3"
+  "widgetName": "QuizText"
 }

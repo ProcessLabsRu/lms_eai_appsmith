@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, name, status, learning_plan, created_at, updated_at, material\nFROM public.\"folders\" \nWHERE id = {{FolderList.selectedItem.id}};",
+      "body": "SELECT id, name, status, learning_plan, created_at, updated_at, material, quiz_test\nFROM public.\"folders\" \nWHERE id = {{FolderList.selectedItem.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

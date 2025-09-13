@@ -1,6 +1,6 @@
 {
   "gitSyncId": "68b42a155ae85937a2d53732_8bf5f248-eade-4a42-ab64-45952cc76b1e",
-  "id": "index_Api1",
+  "id": "index_CreateTest",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -42,7 +42,7 @@
         "key": "queryParameters[0].value"
       }
     ],
-    "name": "Api1",
+    "name": "CreateTest",
     "pageId": "index",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

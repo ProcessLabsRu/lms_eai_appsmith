@@ -51,7 +51,7 @@
       "isVisible": true,
       "label": "Генерировать план",
       "menuItems": {},
-      "onClick": "{{CreatePlan.run().then(() => {\n  GetCourses.run();\n  showAlert('Генерация плана завершена', 'success');\n  WerifiPlan.run();\n});}}",
+      "onClick": "{{CreatePlan.run().then(() => {\n  GetCourses.run();\n  showAlert('Генерация плана завершена', 'success');\n  WerifiPlan.run();\n});\nshowAlert('План обучения генерируется. Пожалуйста подождите. В зависимости от обёема материалов генерация может занять до 10 минут.', 'info');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
